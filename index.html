@@ -138,11 +138,84 @@
         }
         
         .qr-badge span {
-            color: #000;
-            font-size: 8px;
-            font-weight: 800;
-            text-transform: uppercase;
-            line-height: 1.1;
+    color:#000;
+    font-size:8px;
+    font-weight:800;
+    text-transform:uppercase;
+    line-height:1.1;
+}
+
+.analytics-btn{
+    margin-top:20px;
+    padding:14px 35px;
+    font-size:15px;
+    font-weight:bold;
+    background:#00f2ff;
+    color:#000;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.analytics-btn:hover{
+    background:#00c6d8;
+    transform:scale(1.05);
+}
+
+.analytics-popup{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:450px;
+    background:#111;
+    padding:30px;
+    border-radius:15px;
+    border:2px solid #00f2ff;
+    z-index:99999;
+    display:none;
+}
+
+box-shadow:0 0 40px rgba(0,242,255,.3);
+
+}
+
+.analytics-popup h2{
+
+color:#00f2ff;
+
+margin-bottom:15px;
+
+}
+
+.analytics-popup p{
+
+margin:12px 0;
+
+font-size:16px;
+
+}
+
+.closeAnalytics{
+
+margin-top:20px;
+
+padding:12px 25px;
+
+background:#ff0050;
+
+border:none;
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+border-radius:6px;
+
+}
         }
 
         @keyframes qrPulse {
@@ -270,32 +343,77 @@
                 temp: '29°C',
                 aqi: '68 (Moderate)',
                 ticker: '⚠️ TRAFFIC: Heavy congestion near Western Express Highway Flyover. Expected delay: 14 mins. || CONGRATS to Suresh M. from Bandra for winning the hourly bumper cash prize! || Scan QR code to enter...',
-                video: 'https://www.topgear.com/sites/default/files/2022/10/0%20Porsche%20911%20GT3%20RS.jpg?w=892&h=502.jpg'
+                video: 'https://www.topgear.com/sites/default/files/2022/10/0%20Porsche%20911%20GT3%20RS.jpg?w=892&h=502.jpg',
+                product:"Porsche 911 GT3 RS",
+
+description:"Experience the ultimate Porsche 911 GT3 RS engineered for unmatched speed and precision.",
+
+interactions:"52,845+",
+
+scans:"18,932",
+
+forms:"12,674"
             },
             'DELHI': {
                 temp: '34°C',
                 aqi: '142 (Poor)',
                 ticker: '⚠️ TRAFFIC: Smooth flow on Airport Road NH-48. Speed limits enforced. || CONGRATS to Priya G. from Dwarka for winning the ₹1,000 gift voucher! || Scan QR code to enter...',
-                video: 'assets/images/meet-your-icon.jpg'
+                video: 'assets/images/meet-your-icon.jpg',
+                product:"Meet Your Icon",
+
+description:"Scan the QR Code for a chance to meet your favourite celebrity.",
+
+interactions:"97,620+",
+
+scans:"45,382",
+
+forms:"26,184"
             },
             'BANGALORE': {
                 temp: '26°C',
                 aqi: '38 (Good)',
                 ticker: '⚠️ TRAFFIC: Waterlogging alert near Silk Board towards Electronic City Tollway. Move safely. || CONGRATS to Nitin K. from Koramangala for winning a free brand hamper! || Scan QR code to enter...',
-                video: 'https://gizmodo.com/app/uploads/2026/02/Galaxy-S26-Series.jpg'
+                video: 'https://gizmodo.com/app/uploads/2026/02/Galaxy-S26-Series.jpg',
+                product:"Samsung Galaxy S Series",
+
+description:"Discover Samsung's latest AI powered flagship smartphone.",
+
+interactions:"81,570+",
+
+scans:"37,240",
+
+forms:"20,112"
             },
             'VIZAG': {
                 temp: '28°C',
                 aqi: '45 (Good)',
                 
                 ticker: '⚠️ TRAFFIC: Clear lanes at Beach Road Entrance. Driving conditions ideal. || CONGRATS to Amit S. from Wakad for winning the daily gadget prize giveaway! || Scan QR code to enter...',
-                video: 'https://i.ytimg.com/vi/z8C0AZBd4Es/hqdefault.jpg'
+                video: 'https://i.ytimg.com/vi/z8C0AZBd4Es/hqdefault.jpg',
+                product:"Diesel",
+
+description:"Experience the latest Diesel fashion collection with exclusive rewards.",
+
+interactions:"41,730+",
+
+scans:"17,925",
+
+forms:"11,386"
             },
             'HYDERABAD': {
                 temp: '32°C',
                 aqi: '52 (Satisfactory)',
                 ticker: '⚠️ TRAFFIC: Peak hour slow down on HITEC City ORR Phase 2. Lane discipline requested. || CONGRATS to Vikram R. from Gachibowli for winning an Amazon Gift Card! || Scan QR code to enter...',
-                video: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNM4v0sMETnFPz-bxDpdIg_SMD8BJaOfOPcHg7zsLT5Z63rsYNwfAHGyF0YCOQmaXGyRAFBQTiZ1lM-dMCHs_J65TCBm7lYMI9fG9lmUiaIa0QiX_h5lZKHZAjaHVHyJ5_c38uKv_doARl-8UC29qJ_XXF05NfcHTGLU1OxydeMFJuSlpADORpA9RnZiCI/w1600/TANISHQ%20PRESENTS.jpg'
+                video: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNM4v0sMETnFPz-bxDpdIg_SMD8BJaOfOPcHg7zsLT5Z63rsYNwfAHGyF0YCOQmaXGyRAFBQTiZ1lM-dMCHs_J65TCBm7lYMI9fG9lmUiaIa0QiX_h5lZKHZAjaHVHyJ5_c38uKv_doARl-8UC29qJ_XXF05NfcHTGLU1OxydeMFJuSlpADORpA9RnZiCI/w1600/TANISHQ%20PRESENTS.jpg',
+                product:"Tanishq Jewellery",
+
+description:"Celebrate every occasion with timeless Tanishq jewellery.",
+
+interactions:"68,955+",
+
+scans:"29,310",
+
+forms:"16,520"
             },
             'GLOBAL': {
                 temp: '30°C',
@@ -359,6 +477,72 @@ if (imageEl) {
                 window.scrollTo(0,0);
             }, 800);
         }
+        function showAnalytics(){
+
+let city=document.getElementById("activeCity").innerText;
+
+let data=cityData[city];
+
+document.getElementById("analyticsTitle").innerHTML=data.product;
+
+document.getElementById("productDescription").innerHTML=data.description;
+
+document.getElementById("interactionCount").innerHTML=data.interactions;
+
+document.getElementById("scanCount").innerHTML=data.scans;
+
+document.getElementById("formCount").innerHTML=data.forms;
+
+document.getElementById("analyticsPopup").style.display="block";
+
+}
+
+function closeAnalytics(){
+
+document.getElementById("analyticsPopup").style.display="none";
+
+}
     </script>
+    <div class="analytics-popup" id="analyticsPopup">
+
+<h2 id="analyticsTitle"></h2>
+
+<p id="productDescription"></p>
+
+<hr style="margin:20px 0;">
+
+<p><b>👥 People Interacted :</b>
+<span id="interactionCount"></span>
+</p>
+
+<p><b>📱 QR Scans :</b>
+<span id="scanCount"></span>
+</p>
+
+<p><b>📝 Forms Submitted :</b>
+<span id="formCount"></span>
+</p>
+
+<p>
+
+🎁
+
+<b>
+
+Scan the QR Code displayed on the screen to participate in the giveaway.
+
+</b>
+
+</p>
+
+<button class="closeAnalytics"
+
+onclick="closeAnalytics()">
+
+Close
+
+</button>
+
+</div>
 </body>
 </html>
